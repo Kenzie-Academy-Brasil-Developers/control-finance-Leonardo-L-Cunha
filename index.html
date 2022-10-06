@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Control Finance</title>
+    <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+    <meta name="description" content="Control Finance - Seu controle financeiro">
+    <link rel="stylesheet" href="/styles/globalStyles.css">
+    <link rel="stylesheet" href="/styles/modal.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="/styles/buttons.css">
+    <link rel="stylesheet" href="/styles/texts.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="menu-head">
+                <h1 class="tilte-1-bolt"><span id="name-control">Control</span> Finance</h1>
+                <button data-control-modal="open" class="btn-register">Regristar novo valor</button>
+            </div>
+    </header>
+    <main id="app" class="container">
+        <section class="main-head">
+            <h2 class="title-2-bolt">Resumo Financeiro</h2>
+            <div class="box-btns">
+                <button id="all" class="btn-all-entr-exit text-1-bolt">Todos</button>
+                <button id="entrace" class="btn-all-entr-exit text-1-bolt">Entrada</button>
+                <button id="exit" class="btn-all-entr-exit text-1-bolt">Saídas</button>
+            </div>
+        </section>
+        <section class="main-sum">
+            <h3 class="text-1-bolt">Soma dos Valores</h3>
+            <p id="sum-values">R$ 000,00</p>
+        </section>
+        <section class="main-list text-1-bolt">
+        </section>
+        <div data-control-modal="open" class="sum-empty-hidden" id="sum-box">
+            <h2 class="title-2-bolt">Nenhum valor cadastrado</h2>
+            <h3 class=".text-1-bolt">Registrar novo valor</h1>
+        </div>
+    </main>
+    </div>
+    <div id="open" class="modal-container">
+        <div class="card-modal">
+            <div class="modal-head">
+                <h4 class="title-2-bolt">Registro de valor</h4>
+                <button data-control-modal="open" class="btn-close-modal">X</button>
+            </div>
+            <p class="text-2">Digite o valor e em seguida aperte no botão referente ao tipo do valor </p>
+            <form class="form" action="">
+                <p class="text-1">Valor</p>
+                <input id="input" type="number" placeholder="R$ 00,00">
+                <div class="box-btn-modal">
+                    <p class="text-1">Tipo de Valor</p>
+                    <button id="entrada" class="btn-all-entr-exit">Entrada</button>
+                    <button id="saida" class="btn-all-entr-exit">Saída</button>
+                </div>
+                <div class="btn-end-modal">
+                    <button class="btn-cancel">Cancelar</button>
+                    <button  id="btn-insert" type="submit" class="btn-register">Inserir Valor</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="/scripts/modal.js"></script>
+    <script src="/scripts/valuesData.js"></script>
+    <script src="/index.js"></script>
+</body>
+
+</html>

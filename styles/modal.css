@@ -1,0 +1,94 @@
+@keyframes animateModal {
+    0% {
+        transform: translateY(-50%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(33, 37, 41, 0.5);;
+    display: none;
+    animation: animateModal 1s;
+}
+
+.card-modal{
+    width: 60%;
+    height: 100%;
+    max-width: 428px;
+    max-height: 450px;
+    background-color: var(--color-mode);
+    padding: 24px;
+}
+.modal-head{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+.form input {
+    width: 100%;
+    padding:11.5px 16px;
+    border: solid 1.5px var(--color-grey-3);
+    border-radius: var(--radius-1);
+    
+}
+
+.card-modal > p {
+    margin-bottom: 25px;
+}
+.box-btn-modal {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-top: 25px;
+}
+
+.btn-end-modal{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 23px;
+    gap: 16px;
+}
+
+.show-modal{
+    display: flex;
+}
+
+@media (max-width: 700px){
+    .card-modal{
+        width: 85%;
+       
+    }
+    .box-btn-modal{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .box-btn-modal button{
+        width: 100%;
+    }
+    .btn-end-modal{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-end-modal button{
+        width: 50%;
+    }
+}

@@ -1,0 +1,46 @@
+.title-1{
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-1);
+    line-height: 39px;
+    color: var(--color-grey-1);
+}
+.tilte-1-bolt{
+    font-size: var(--font-size-1);
+    font-weight: var(--font-weight-1);
+    line-height: 24px;
+    color: var(--color-grey-1);
+}
+
+.title-2{
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-1);
+    line-height: 39px;
+    color: var(--color-grey-1);
+}
+
+.title-2-bolt{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-1);
+    line-height: 19px;
+    color: var(--color-grey-1);
+}
+
+.text-1{
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight);
+    line-height: 39px;
+    color: var(--color-grey-1);
+}
+
+.text-1-bolt{
+    font-size: var(--font-size-3);
+    font-weight: var(--font-weight-3);
+    color: var(--color-grey-1);
+
+}
+
+.text-2{
+    font-size: var(--font-size-4);
+    font-weight: var(--font-weight-2);
+    color: var(--color-grey-1);
+}
