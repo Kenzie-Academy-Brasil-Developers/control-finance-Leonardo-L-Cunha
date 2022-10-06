@@ -83,7 +83,7 @@ ul{
 }
 
 .sum-empty-hidden{
-    width: 100%;
+    width: 90%;
     max-width: 688px;
     height: 84px;
     background-color: var(--color-grey-5);
