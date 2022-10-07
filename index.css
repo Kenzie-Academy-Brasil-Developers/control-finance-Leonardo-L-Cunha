@@ -73,9 +73,7 @@ ul{
     font-weight: var(--font-weight-3);
     line-height: 15px;
 }
-.box-entr-exit:hover{
 
-}
 .box-trash{
     display: flex;
     gap: 40px;
